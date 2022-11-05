@@ -332,3 +332,53 @@ footer {
   letter-spacing: 1px;
 }
 
+// Moved from index.html
+.about {
+	padding-bottom: 10px;
+    padding-right: 20px;
+    overflow: hidden;
+    font-size: 16px;
+
+}
+
+.about img {
+    margin-right: 15px;
+    display:inline-block;
+    width: 200px;
+}
+
+.about p {
+    display:inline-block;
+  	vertical-align:top;
+    width:60%;
+    margin: 0;
+    padding: 0;
+}
+
+.about a:hover {
+	color: #666;
+}
+
+.publication {
+	padding-bottom: 10px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.publication img {
+    margin-right: 15px;
+    display:inline-block;
+    width:80px;
+    clear:left;
+    display:inline-block;
+  	vertical-align:top;
+}
+
+.publication p {
+    display:inline-block;
+    width:79%;
+    font-size: 13px;
+  	vertical-align:top;
+    margin: 0;
+    padding: 0;
+}
