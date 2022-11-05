@@ -1,0 +1,6 @@
+@article{yasunaga2022deep,
+  title={Deep Bidirectional Language-Knowledge Graph Pretraining},
+  author={Yasunaga, Michihiro and Bosselut, Antoine and Ren, Hongyu and Zhang, Xikun and Manning, Christopher D and Liang, Percy and Leskovec, Jure},
+  journal={arXiv preprint arXiv:2210.09338},
+  year={2022}
+}

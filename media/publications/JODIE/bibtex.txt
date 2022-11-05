@@ -1,0 +1,7 @@
+@inproceedings{kumar2019predicting,
+  title={Predicting dynamic embedding trajectory in temporal interaction networks},
+  author={Kumar, Srijan and Zhang, Xikun and Leskovec, Jure},
+  booktitle={Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery \& data mining},
+  pages={1269--1278},
+  year={2019}
+}

@@ -1,0 +1,5 @@
+@inproceedings{maoclevrer,
+  title={CLEVRER-Humans: Describing Physical and Causal Events the Human Way},
+  author={Mao, Jiayuan and Yang, Xuelin and Zhang, Xikun and Goodman, Noah and Wu, Jiajun},
+  booktitle={Thirty-sixth Conference on Neural Information Processing Systems Datasets and Benchmarks Track}
+}

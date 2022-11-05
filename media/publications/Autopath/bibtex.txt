@@ -1,0 +1,8 @@
+@inproceedings{yang2018similarity,
+  title={Similarity modeling on heterogeneous networks via automatic path discovery},
+  author={Yang, Carl and Liu, Mengxiong and He, Frank and Zhang, Xikun and Peng, Jian and Han, Jiawei},
+  booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases},
+  pages={37--54},
+  year={2018},
+  organization={Springer}
+}
