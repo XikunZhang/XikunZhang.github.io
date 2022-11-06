@@ -25,7 +25,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 900px;
   padding: 0 10px;
   width: 100%;
 }
@@ -316,7 +316,7 @@ footer {
 @import "highlights";
 @import "svg-icons";
 
-.link {font-family:Arial, sans-serif;color: white ;opacity: 0.7;background: #666;padding: 2px 4px;font-size: 9pt;line-height: 18pt;border-radius: 4px; -moz-border-radius: 4px;-webkit-border-radius: 4px;transition: all 0.2s ease 0s;}
+.link {font-family:Arial, sans-serif;color: white ;opacity: 0.7;background: #666;padding: 2px 4px;font-size: 11pt;line-height: 18pt;border-radius: 4px; -moz-border-radius: 4px;-webkit-border-radius: 4px;transition: all 0.2s ease 0s;}
 
 .link:hover{opacity: 0.3}
 
@@ -337,20 +337,20 @@ footer {
 	padding-bottom: 10px;
     padding-right: 20px;
     overflow: hidden;
-    font-size: 16px;
+    font-size: 19px;
 
 }
 
 .about img {
     margin-right: 15px;
     display:inline-block;
-    width: 200px;
+    width: 250px;
 }
 
 .about p {
     display:inline-block;
   	vertical-align:top;
-    width:60%;
+    width:65%;
     margin: 0;
     padding: 0;
 }
@@ -377,7 +377,7 @@ footer {
 .publication p {
     display:inline-block;
     width:79%;
-    font-size: 13px;
+    font-size: 16px;
   	vertical-align:top;
     margin: 0;
     padding: 0;
