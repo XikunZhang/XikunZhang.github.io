@@ -10,5 +10,5 @@ image: /media/publications/FoundationModel/image.png
 bibtex: /media/publications/FoundationModel/bibtex.txt
 pdf: https://arxiv.org/pdf/2108.07258.pdf
 website: https://crfm.stanford.edu/report.html
-type: paper
+type: selected paper
 ---
