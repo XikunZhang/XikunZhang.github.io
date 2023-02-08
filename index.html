@@ -43,7 +43,8 @@ layout: default
 	    <br>
 		{{ publication.author }}
 		<br>
-		{{ publication.journal }},  {{ publication.year }}<br>
+		<!-- {{ publication.journal }},  {{ publication.year }}<br> -->
+        <em>{{ publication.journal }}</em><br>
 
 		{% if publication.pdf %}
 	  			<a class="link" href={{publication.pdf}}  style="color: white;background: #4daf4a">PDF</a>
@@ -96,7 +97,8 @@ layout: default
 	    <br>
 		{{ publication.author }}
 		<br>
-		{{ publication.journal }},  {{ publication.year }}<br>
+		<!-- {{ publication.journal }},  {{ publication.year }}<br> -->
+		<em>{{ publication.journal }}</em><br>
 
 		{% if publication.pdf %}
 	  			<a class="link" href={{publication.pdf}}  style="color: white;background: #4daf4a">PDF</a>
