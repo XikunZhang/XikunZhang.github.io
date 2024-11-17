@@ -1,0 +1,6 @@
+@article{bunne2024build,
+  title={How to build the virtual cell with artificial intelligence: Priorities and opportunities},
+  author={Bunne, Charlotte and Roohani, Yusuf and Rosen, Yanay and Gupta, Ankit and Zhang, Xikun and Roed, Marcel and Alexandrov, Theo and AlQuraishi, Mohammed and Brennan, Patricia and Burkhardt, Daniel B and others},
+  journal={arXiv preprint arXiv:2409.11654},
+  year={2024}
+}
