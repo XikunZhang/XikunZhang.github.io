@@ -37,119 +37,134 @@ layout: default
 
 <a id="publications"></a>
 <h3>Selected Publications</h3>
-
+<div class="container">
   {% for publication in site.posts %}
   	{% if publication.type == "selected paper" %}  
 	
-  	<div class="publication">
+  	<div class="row publication">
+        <div class="col-md-3 col-12 text-center">
     		{% if publication.image %}
 	  			<img src="{{publication.image}}" />
 		{% else %}
 			  	<img src="/assets/images/dummywhite.jpg" />
 		{% endif %}
+        </div>
+        <div class="col-md-9 col-12">
+        <p>
+            <b><a style="color:#525252; padding:0px 0px" href={{publication.link}} >{{ publication.title }}</b></a>
+            <br>
+            {{ publication.author }}
+            <br>
+            <!-- {{ publication.journal }},  {{ publication.year }}<br> -->
+            <em>{{ publication.journal }}</em><br>
 
-   	<p>
-	    <b><a style="color:#525252; padding:0px 0px" href={{publication.link}} >{{ publication.title }}</b></a>
-	    <br>
-		{{ publication.author }}
-		<br>
-		<!-- {{ publication.journal }},  {{ publication.year }}<br> -->
-        <em>{{ publication.journal }}</em><br>
+            {% if publication.pdf %}
+                    <a class="link" href={{publication.pdf}}  style="color: white;background: #4daf4a">PDF</a>
+            {% endif %}
 
-		{% if publication.pdf %}
-	  			<a class="link" href={{publication.pdf}}  style="color: white;background: #4daf4a">PDF</a>
-		{% endif %}
+            {% if publication.link %}
+                    <a class="link" href={{publication.link}}  style="color: white;background: #984ea3">Abstract</a>
+            {% endif %}
 
-		{% if publication.link %}
-	  			<a class="link" href={{publication.link}}  style="color: white;background: #984ea3">Abstract</a>
-		{% endif %}
+            {% if publication.bibtex %}
+                    <a class="link" href="{{publication.bibtex}}" style="color: white; background: #e41a1c;">Bibtex</a>
+            {% endif %}
 
-		{% if publication.bibtex %}
-	  			<a class="link" href="{{publication.bibtex}}" style="color: white; background: #e41a1c;">Bibtex</a>
-		{% endif %}
+            {% if publication.code %}
+                    <a class="link" href={{publication.code}}  style="color: white;background: #0E53A7">Code</a>
+            {% endif %}
 
-		{% if publication.code %}
-	  			<a class="link" href={{publication.code}}  style="color: white;background: #0E53A7">Code</a>
-		{% endif %}
+            {% if publication.website %}
+                    <a class="link" href={{publication.website}}  style="color: white;background: #d94801">Website</a>
+            {% endif %}
 
-		{% if publication.website %}
-	  			<a class="link" href={{publication.website}}  style="color: white;background: #d94801">Website</a>
-		{% endif %}
+            {% if publication.video %}
+                    <a class="link" href={{publication.video}}  style="color: white; background: #999999;">Video</a>
+            {% endif %}
 
-        {% if publication.video %}
-	  			<a class="link" href={{publication.video}}  style="color: white; background: #999999;">Video</a>
-		{% endif %}
-
-        {% if publication.blog %}
-            <a class="link" href={{publication.blog}}  style="color: white; background: #4099FF;">Blog</a>
-        {% endif %}
+            {% if publication.blog %}
+                <a class="link" href={{publication.blog}}  style="color: white; background: #4099FF;">Blog</a>
+            {% endif %}
 
 
- 	</p>
+ 	    </p>
+        </div>
  	</div>​
   {% endif %}
 {% endfor %}
+</div>
 
 <h3>Other Publications</h3>
-
+<div class="container">
   {% for publication in site.posts %}
   	{% if publication.type == "paper" %}  
 	
-  	<div class="publication">
+  	<div class="row publication">
+        <div class="col-md-3 col-12 text-center">
     		{% if publication.image %}
 	  			<img src="{{publication.image}}" />
 		{% else %}
 			  	<img src="/assets/images/dummywhite.jpg" />
 		{% endif %}
+        </div>
+        <div class="col-md-9 col-12">
+   	    <p>
+            <b><a style="color:#525252; padding:0px 0px" href={{publication.link}} >{{ publication.title }}</b></a>
+            <br>
+            {{ publication.author }}
+            <br>
+            <!-- {{ publication.journal }},  {{ publication.year }}<br> -->
+            <em>{{ publication.journal }}</em><br>
 
-   	<p>
-	    <b><a style="color:#525252; padding:0px 0px" href={{publication.link}} >{{ publication.title }}</b></a>
-	    <br>
-		{{ publication.author }}
-		<br>
-		<!-- {{ publication.journal }},  {{ publication.year }}<br> -->
-		<em>{{ publication.journal }}</em><br>
+            {% if publication.pdf %}
+                    <a class="link" href={{publication.pdf}}  style="color: white;background: #4daf4a">PDF</a>
+            {% endif %}
 
-		{% if publication.pdf %}
-	  			<a class="link" href={{publication.pdf}}  style="color: white;background: #4daf4a">PDF</a>
-		{% endif %}
+            {% if publication.link %}
+                    <a class="link" href={{publication.link}}  style="color: white;background: #984ea3">Abstract</a>
+            {% endif %}
 
-		{% if publication.link %}
-	  			<a class="link" href={{publication.link}}  style="color: white;background: #984ea3">Abstract</a>
-		{% endif %}
+            {% if publication.bibtex %}
+                    <a class="link" href="{{publication.bibtex}}" style="color: white; background: #e41a1c;">Bibtex</a>
+            {% endif %}
 
-		{% if publication.bibtex %}
-	  			<a class="link" href="{{publication.bibtex}}" style="color: white; background: #e41a1c;">Bibtex</a>
-		{% endif %}
+            {% if publication.code %}
+                    <a class="link" href={{publication.code}}  style="color: white;background: #0E53A7">Code</a>
+            {% endif %}
 
-		{% if publication.code %}
-	  			<a class="link" href={{publication.code}}  style="color: white;background: #0E53A7">Code</a>
-		{% endif %}
+            {% if publication.website %}
+                    <a class="link" href={{publication.website}}  style="color: white;background: #d94801">Website</a>
+            {% endif %}
 
-		{% if publication.website %}
-	  			<a class="link" href={{publication.website}}  style="color: white;background: #d94801">Website</a>
-		{% endif %}
+            {% if publication.video %}
+                    <a class="link" href={{publication.video}}  style="color: white; background: #999999;">Video</a>
+            {% endif %}
 
-        {% if publication.video %}
-	  			<a class="link" href={{publication.video}}  style="color: white; background: #999999;">Video</a>
-		{% endif %}
-
-        {% if publication.blog %}
-            <a class="link" href={{publication.blog}}  style="color: white; background: #4099FF;">Blog</a>
-        {% endif %}
+            {% if publication.blog %}
+                <a class="link" href={{publication.blog}}  style="color: white; background: #4099FF;">Blog</a>
+            {% endif %}
 
 
- 	</p>
+ 	    </p>
+        </div>
  	</div>​
   {% endif %}
 {% endfor %}
+</div>
 
-
+​
+<hr>
+<a id="awards"></a>
+<h3>Awards</h3>
+<ul class="awards">
+    <li>Stanford Data Science Scholar (2024): merit-based, 16 selected out of hundreds of applicants at Stanford</li>
+    <li>UIUC Bronze Tablet (2019): highest undergraduate honor at UIUC, top 3% of graduates</li>
+</ul> 
 <hr>
 
 <a id="community"></a>
 <h3>Academic Services</h3>
-<ul>
+<ul class="awards">
     <li>Top 5% teaching assistant across the Stanford computer science department during fall 2023 (Head TA in <a href="https://web.stanford.edu/class/cs224w/">CS224W</a>)</li>
     <li>Organizing a workshop "<a href="https://psb.stanford.edu/workshop/tools/">Tools for assembling the cell: Towards the era of cell structural bioinformatics</a>" at the <a href="https://psb.stanford.edu/">Pacific Symposium on Biocomputing (PSB)</a> 2024</li>
     <li>Invited talk at AWS AI Lab in April 2022 on the GreaseLM paper</li>
@@ -158,9 +173,4 @@ layout: default
     <li>Workshop reviewer for ACL CSRR workshop, CIKM FedGraph workshop, AAAI-GCLR workshop, AAAI-UDM workshop</li>
 </ul> 
 
-​
-<hr>
-<h3>Awards</h3>
-<ul>
-    <li>Bronze Tablet (2019): highest undergraduate honor at UIUC, top 3% of graduates</li>
-</ul> 
+
